@@ -1,0 +1,12 @@
+[project]
+name = "dst-platform"
+version = "0.0.1"
+description = "Professional Data Scientist Tools"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi[standard]", "gradio", "uvicorn", 
+    "transformers", "torch", "accelerate", "bitsandbytes",
+    "sqlmodel", "psycopg2-binary", "minio",
+    "python-dotenv", "pyyaml", "psutil", 
+    "huggingface_hub", "pyngrok"
+]

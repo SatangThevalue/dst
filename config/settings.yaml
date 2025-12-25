@@ -1,0 +1,18 @@
+app_name: "DST Platform"
+system:
+  env: "auto" # auto, colab, local
+
+models:
+  base_path: "./models" # ถ้าบน Colab แก้เป็น /content/drive/MyDrive/models
+  storage_dir: "storage"
+  registry_file: "registry.json"
+
+database:
+  use_postgres: false 
+  postgres_url: "postgresql://user:pass@localhost:5432/dst_db"
+
+storage:
+  minio:
+    enabled: false
+    endpoint: "play.min.io"
+    bucket: "dst-data"
